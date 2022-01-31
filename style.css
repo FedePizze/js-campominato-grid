@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 70%;
+    padding: 15px 0;
+    margin: auto;
+}
+
+#cont1{
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    background-color: aquamarine;
+    padding: 30px 0;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttonBox1{
+    padding: 2px 0;
+    padding-right: 80px;
+}
+
+.buttonBox2{
+    padding: 2px 30px;
+}
+
+#cont2{
+    width: 600px;
+    height: 600px;
+    border: 2px solid white;
+
+}
+
+.squareEasy{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 3px soldi black;
+    color: black;
+}
+
+.squareHard{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 3px soldi black;
+    color: black;
+}
+
+.squareInsane{
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    border: 3px soldi black;
+    color: black;
+}
+
+.squareBG{
+    background-color: cornflowerblue;
+    color: white;
+}
