@@ -21,19 +21,37 @@ play.addEventListener('click', function() {
         var numeroCaselle = 100;
         var diff = 'Easy';
     }
+
+
     for (let i = 1; i <= numeroCaselle; i++) {
         const node = document.createElement('div')
         node.innerHTML = i;
         node.classList.add('square' + diff)
-        regole.classList.add('none')
+        node.classList.add(i)
         node.classList.add('aaa')
+
         node.addEventListener('click', function() 
-        {
-            this.classList.add('squareBG');
-        })
+            {
+                this.classList.add('squareBG');
+            })
+
         griglia.appendChild(node);
-    } 
+    }
+
+    for (let i = 0; i <= 16; i++) {
+        let elements = document.querySelectorAll('.aaa')
+        let random1 = Math.floor(Math.random() * elements.length);
+        
+        elements[random1].addEventListener('click', function() 
+            {
+                this.classList.add('squareBG2');
+                setTimeout(() => {alert('BOOM! Hai beccato una mina')}, 200);
+                setTimeout(() => {griglia.innerHTML = ''}, 1000);
+            })
+    }
 })
+
+
 
 
 
