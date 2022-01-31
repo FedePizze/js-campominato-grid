@@ -29,7 +29,7 @@ main{
 
 .buttonBox1{
     padding: 2px 0;
-    padding-right: 80px;
+    padding-right: 100px;
 }
 
 .buttonBox2{
@@ -72,6 +72,11 @@ main{
 
 .squareBG{
     background-color: cornflowerblue;
+    color: white;
+}
+
+.squareBG2{
+    background-color: red;
     color: white;
 }
 
