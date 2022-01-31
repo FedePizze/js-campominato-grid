@@ -39,32 +39,42 @@ main{
 #cont2{
     width: 600px;
     height: 600px;
-    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
 
+[class*='square']{
+    border: 3px solid black;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .squareEasy{
     width: calc(100% / 10);
-    height: calc(100% / 10);
-    border: 3px soldi black;
-    color: black;
+    height: calc(100% / 10); 
 }
 
 .squareHard{
     width: calc(100% / 9);
     height: calc(100% / 9);
-    border: 3px soldi black;
-    color: black;
 }
 
 .squareInsane{
     width: calc(100% / 7);
     height: calc(100% / 7);
-    border: 3px soldi black;
-    color: black;
 }
 
 .squareBG{
     background-color: cornflowerblue;
     color: white;
+}
+
+.none{
+    display: none;
 }
