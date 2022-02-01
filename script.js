@@ -1,17 +1,16 @@
 const griglia = document.getElementById('cont2');
-const regole = document.getElementById('regole');
 const fine = document.getElementById('fine');
 
 const play = document.getElementById('play');
 const select = document.getElementById('select');
 
-
+fine.innerHTML = 'Scegli la difficoltà e premi play'
 
 play.addEventListener('click', function() {
     griglia.innerHTML = '';
-    let click = 0;
+    fine.innerHTML = 'Buon divertimento!'
 
-    
+    let click = 0;
 
     if (select.value == 'Insane') {
         var numeroCaselle = 49;
@@ -50,19 +49,17 @@ play.addEventListener('click', function() {
     for (let i = 0; i <= 16; i++) {
         let elements = document.querySelectorAll('.aaa')
         let random = Math.floor(Math.random() * elements.length);
-        //console.log(random)
-        
+        console.log(random)
+
         elements[random].addEventListener('click', function() 
             {
                 this.classList.add('squareBG2');
                 fine.innerHTML = 'hai perso dopo ' + click + ' mosse';
                 setTimeout(() => {alert('BOOM! Hai beccato una mina')}, 200);
-                setTimeout(() => {griglia.innerHTML = ''}, 1000);
-                setTimeout(() => {fine.innerHTML = ''}, 1000);
+                setTimeout(() => {griglia.innerHTML = '', fine.innerHTML = 'Scegli la difficoltà e premi play'}, 1000);
+                
             })
     }
-
-    
 })
 
 
