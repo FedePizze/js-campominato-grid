@@ -7,7 +7,7 @@
 
 .container{
     width: 70%;
-    padding: 15px 0;
+    padding: 10px 0;
     margin: auto;
 }
 
@@ -18,7 +18,8 @@
 
 main{
     background-color: aquamarine;
-    padding: 30px 0;
+    height: 600px;
+    padding: 20px 0;
 }
 
 .box{
@@ -37,8 +38,8 @@ main{
 }
 
 #cont2{
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,4 +83,11 @@ main{
 
 .none{
     display: none;
+}
+
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    
 }
